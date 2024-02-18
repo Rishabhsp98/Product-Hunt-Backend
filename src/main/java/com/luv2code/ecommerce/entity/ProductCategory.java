@@ -9,9 +9,8 @@ import java.util.Set;
 
 @Entity
 @Table(name="product_category")
- @Data
-//@Getter
-//@Setter
+@Getter
+@Setter
 public class ProductCategory {
 
     @Id
