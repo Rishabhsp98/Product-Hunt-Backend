@@ -10,8 +10,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 import java.util.Collection;
 
-@CrossOrigin("http://localhost:4200")
-//@RepositoryRestResource(collectionResourceRel = "products",path = "products")
+@RepositoryRestResource
 public interface ProductRepository extends JpaRepository<Product, Long> {
 
 
