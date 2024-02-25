@@ -25,6 +25,11 @@ public class SecurityConfiguration {
                             anyRequest().permitAll())
                 .oauth2ResourceServer(oauth2ResourceServer -> oauth2ResourceServer.jwt(Customizer.withDefaults()));
 
+
+        // + CORS filters
+        http.cors(Customizer.withDefaults());
+
+
         // + content negotiation strategy
         http.setSharedObject(ContentNegotiationStrategy.class, new HeaderContentNegotiationStrategy());
 
